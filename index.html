@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Itinerario interactivo y guía para el viaje de los estudiantes del Instituto Tecnológico de Ciudad Madero (ITCM) hacia Talent Land 2026 en Expo Santa Fe, CDMX.">
+    <title>Viaje ITCM - Talent Land 2026</title>
+    
+    <!-- Google Fonts: Inter and Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="background-canvas">
+        <!-- Abstract gradient shapes -->
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <!-- HEADER / HERO -->
+    <header class="hero section-scroll">
+        <div class="container hero-content">
+            <div class="badge-tag"><i class="ph ph-rocket-launch"></i> MISIÓN TECNOLÓGICA</div>
+            <h1 class="hero-title">ITCM <span class="accent-text">Talent Land</span> 2026</h1>
+            <p class="hero-subtitle">El evento de innovación y tecnología más importante, ahora en Expo Santa Fe, CDMX.<br>Listos para representar con orgullo al ITCM.</p>
+            
+            <div class="countdown glass-panel">
+                <div class="time-block">
+                    <span id="cd-days" class="time-value">00</span>
+                    <span class="time-label">DÍAS</span>
+                </div>
+                <div class="time-separator">:</div>
+                <div class="time-block">
+                    <span id="cd-hours" class="time-value">00</span>
+                    <span class="time-label">HRS</span>
+                </div>
+                <div class="time-separator">:</div>
+                <div class="time-block">
+                    <span id="cd-mins" class="time-value">00</span>
+                    <span class="time-label">MIN</span>
+                </div>
+                <div class="time-block seconds-block">
+                    <span id="cd-secs" class="time-value accent-text">00</span>
+                    <span class="time-label">SEG</span>
+                </div>
+            </div>
+            
+            <a href="#itinerario" class="btn-primary">Ver Itinerario <i class="ph ph-arrow-down"></i></a>
+        </div>
+    </header>
+
+    <main>
+        <!-- ITINERARIO -->
+        <section id="itinerario" class="section-container section-scroll">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Itinerario del <span class="accent-text">Viaje</span></h2>
+                    <p class="section-desc">El plan detallado día por día. Haz clic en cada día para desplegar las actividades.</p>
+                </div>
+
+                <div class="timeline">
+                    <!-- Dia 1 -->
+                    <div class="timeline-item glass-panel accordion active">
+                        <div class="accordion-header">
+                            <div class="day-badge">LUN 06</div>
+                            <div class="day-title-wrap">
+                                <h3>Lunes 6 de Abril</h3>
+                                <p>Rumbo a la Ciudad de México</p>
+                            </div>
+                            <i class="ph ph-caret-down toggle-icon"></i>
+                        </div>
+                        <div class="accordion-body">
+                            <ul class="activity-list">
+                                <li>
+                                    <div class="time">10:00 a.m.</div>
+                                    <div class="activity-info"><i class="ph ph-bus"></i> Salida del ITCM.</div>
+                                </li>
+                                <li>
+                                    <div class="time line">10:00 - 5:00 p.m.</div>
+                                    <div class="activity-info"><i class="ph ph-map-pin"></i> Viaje en Transit hacia CDMX.</div>
+                                </li>
+                                <li>
+                                    <div class="time">5:00 p.m.</div>
+                                    <div class="activity-info"><i class="ph ph-fork-knife"></i> Llegada estimada a CDMX. Comeremos en un lugar allá.</div>
+                                </li>
+                                <li>
+                                    <div class="time">Tarde</div>
+                                    <div class="activity-info"><i class="ph ph-buildings"></i> Llegada al hotel <strong>Stadia Suites Santa Fe</strong> y Check-in.</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Dia 2 -->
+                    <div class="timeline-item glass-panel accordion">
+                        <div class="accordion-header">
+                            <div class="day-badge">MAR 07</div>
+                            <div class="day-title-wrap">
+                                <h3>Martes 7 de Abril</h3>
+                                <p>Primer día en Talent Land</p>
+                            </div>
+                            <i class="ph ph-caret-down toggle-icon"></i>
+                        </div>
+                        <div class="accordion-body">
+                            <ul class="activity-list">
+                                <li>
+                                    <div class="time">8:00 - 9:00 a.m.</div>
+                                    <div class="activity-info"><i class="ph ph-coffee"></i> Almuerzo en el hotel.</div>
+                                </li>
+                                <li>
+                                    <div class="time">9:00 a.m.</div>
+                                    <div class="activity-info"><i class="ph ph-person-simple-walk"></i> Salida del hotel hacia Expo Santa Fe.</div>
+                                </li>
+                                <li>
+                                    <div class="time line">9:00 - 1:00 p.m.</div>
+                                    <div class="activity-info"><i class="ph ph-sparkle"></i> Evento Talent Land.</div>
+                                </li>
+                                <li>
+                                    <div class="time">1:00 - 2:00 p.m.</div>
+                                    <div class="activity-info"><i class="ph ph-hamburger"></i> Comida en el área de comida de la expo.</div>
+                                </li>
+                                <li>
+                                    <div class="time line">2:00 - 7:00 p.m.</div>
+                                    <div class="activity-info"><i class="ph ph-lightbulb"></i> Evento Talent Land y actividades.</div>
+                                </li>
+                                <li>
+                                    <div class="time">7:00 - 8:00 p.m.</div>
+                                    <div class="activity-info"><i class="ph ph-pizza"></i> Cena en la expo.</div>
+                                </li>
+                                <li>
+                                    <div class="time">9:00 p.m.</div>
+                                    <div class="activity-info"><i class="ph ph-moon"></i> Salida de Expo Santa Fe de regreso al hotel.</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Dia 3 -->
+                    <div class="timeline-item glass-panel accordion">
+                        <div class="accordion-header">
+                            <div class="day-badge">MIE 08</div>
+                            <div class="day-title-wrap">
+                                <h3>Miércoles 8 de Abril</h3>
+                                <p>Segundo día en Talent Land</p>
+                            </div>
+                            <i class="ph ph-caret-down toggle-icon"></i>
+                        </div>
+                        <div class="accordion-body">
+                            <ul class="activity-list">
+                                <li>
+                                    <div class="time">8:00 - 9:00 a.m.</div>
+                                    <div class="activity-info"><i class="ph ph-coffee"></i> Almuerzo en el hotel.</div>
+                                </li>
+                                <li>
+                                    <div class="time">9:00 a.m.</div>
+                                    <div class="activity-info"><i class="ph ph-person-simple-walk"></i> Salida del hotel hacia Expo Santa Fe.</div>
+                                </li>
+                                <li>
+                                    <div class="time line">9:00 - 1:00 p.m.</div>
+                                    <div class="activity-info"><i class="ph ph-sparkle"></i> Evento Talent Land.</div>
+                                </li>
+                                <li>
+                                    <div class="time">1:00 - 2:00 p.m.</div>
+                                    <div class="activity-info"><i class="ph ph-hamburger"></i> Comida en el área de comida de la expo.</div>
+                                </li>
+                                <li>
+                                    <div class="time line">2:00 - 7:00 p.m.</div>
+                                    <div class="activity-info"><i class="ph ph-lightbulb"></i> Evento Talent Land y Hackathon.</div>
+                                </li>
+                                <li>
+                                    <div class="time">7:00 - 8:00 p.m.</div>
+                                    <div class="activity-info"><i class="ph ph-pizza"></i> Cena en la expo.</div>
+                                </li>
+                                <li>
+                                    <div class="time">9:00 p.m.</div>
+                                    <div class="activity-info"><i class="ph ph-moon"></i> Salida de Expo Santa Fe de regreso al hotel.</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Dia 4 -->
+                    <div class="timeline-item glass-panel accordion">
+                        <div class="accordion-header">
+                            <div class="day-badge">JUE 09</div>
+                            <div class="day-title-wrap">
+                                <h3>Jueves 9 de Abril</h3>
+                                <p>Final y Regreso</p>
+                            </div>
+                            <i class="ph ph-caret-down toggle-icon"></i>
+                        </div>
+                        <div class="accordion-body">
+                            <ul class="activity-list">
+                                <li>
+                                    <div class="time">8:00 - 9:00 a.m.</div>
+                                    <div class="activity-info"><i class="ph ph-coffee"></i> Almuerzo en el hotel.</div>
+                                </li>
+                                <li>
+                                    <div class="time">9:00 a.m.</div>
+                                    <div class="activity-info"><i class="ph ph-suitcase-rolling"></i> Check-out. Salimos con las maletas hacia Expo Santa Fe.</div>
+                                </li>
+                                <li>
+                                    <div class="time line desc">Todo el día</div>
+                                    <div class="activity-info"><i class="ph ph-laptop"></i> ¡Semifinales del Hackathon! El itinerario del resto del día y regreso dependerá enteramente del desempeño del equipo que concursa en el hackathon. <b>¡El regreso a casa se realizará este mismo día!</b></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RECORDATORIOS -->
+        <section class="section-container section-scroll" id="recomendaciones">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Avisos <span class="accent-text">Importantes</span></h2>
+                    <p class="section-desc">Por favor ten en cuenta las siguientes recomendaciones para un viaje ágil y sin complicaciones.</p>
+                </div>
+
+                <div class="cards-grid">
+                    <!-- Tarjeta 1 -->
+                    <div class="card glass-panel">
+                        <div class="card-icon"><i class="ph ph-identification-card"></i></div>
+                        <h3>Credencial INE</h3>
+                        <p>Es vital llevar tu credencial original. Nos la pedirán en el hotel para validar las reservaciones del grupo.</p>
+                    </div>
+
+                    <!-- Tarjeta 2 -->
+                    <div class="card glass-panel">
+                        <div class="card-icon"><i class="ph ph-ticket"></i></div>
+                        <h3>Entrada al Evento</h3>
+                        <p>Alista tu acceso con anticipación. Llévalo en una hoja impresa o ten instalada e iniciada la app de <strong>Eventbrite</strong> en tu celular.</p>
+                    </div>
+
+                    <!-- Tarjeta 3 -->
+                    <div class="card glass-panel">
+                        <div class="card-icon"><i class="ph ph-backpack"></i></div>
+                        <h3>Equipaje y Espacio</h3>
+                        <p>Viajaremos en una unidad Transit. La prioridad de espacio en la cajuela es para el equipo que va al Hackathon. El resto del grupo debe preparar <strong>maleta de mano</strong> (tamaño de avión).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Hecho para los estudiantes del ITCM en Talent Land 2026. <br>¡Mucho éxito a todos!</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
